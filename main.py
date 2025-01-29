@@ -11,46 +11,46 @@ def custom_button(label, url):
     st.markdown(button_html, unsafe_allow_html=True)
 
 # Titre de l'application principale
-st.title("Bienvenue sur notre Plateforme IA")
+st.title("Welcome to Our AI Platform")
 
 # Description
 st.write("""
-## Votre solution complète pour l'analyse de documents avec l'intelligence artificielle.
+## Your complete solution for document analysis with artificial intelligence.
 
-Choisissez l'une de nos applications IA ci-dessous pour commencer. Nos outils sont conçus pour vous aider à extraire et à analyser les informations de vos documents de manière rapide et précise.
+Choose one of our AI applications below to get started. Our tools are designed to help you extract and analyze information from your documents quickly and accurately.
 """)
 
 # Barre de navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.selectbox("Choisissez une application", ["Accueil", "CV Analyser", "Carte d'identité Analyser", "Permis de conduire Analyser", "Factures Analyser"])
+page = st.sidebar.selectbox("Choose an application", ["Home", "Resume Analyzer", "ID Card Analyzer", "Driver's License Analyzer", "Invoice Analyzer"])
 
 # Contenu de la page
-if page == "Accueil":
-    st.header("Bienvenue sur la page d'accueil")
+if page == "Home":
+    st.header("Welcome to the Home Page")
     st.write("""
-    ### Notre plateforme offre les applications suivantes :
-    - **CV Analyser**: Analysez et extrayez des informations de vos CV.
-    - **Carte d'identité Analyser**: Analysez et extrayez des informations de vos Cartes d'identité.
-    - **Permis de conduire Analyser**: Analysez et extrayez des informations de vos Permis de conduire.
-    - **Factures Analyser**: Analysez et extrayez des informations de vos Factures.
+    ### Our platform offers the following applications:
+    - **Resume Analyzer**: Analyze and extract information from your resumes.
+    - **ID Card Analyzer**: Analyze and extract information from your ID cards.
+    - **Driver's License Analyzer**: Analyze and extract information from your driver's licenses.
+    - **Invoice Analyzer**: Analyze and extract information from your invoices.
     """)
-elif page == "CV Analyser":
-    st.header("CV Analyser")
-    st.write("Analysez et extrayez des informations de vos CV.")
-    custom_button("Accéder à CV Analyser", "https://cv-ai-deepseek.streamlit.app/")
-elif page == "Carte d'identité Analyser":
-    st.header("Carte d'identité Analyser")
-    st.write("Analysez et extrayez des informations de vos Cartes d'identité.")
-    custom_button("Accéder à Carte d'identité Analyser", "https://cni-analyser.streamlit.app/")
-elif page == "Permis de conduire Analyser":
-    st.header("Permis de conduire Analyser")
-    st.write("Analysez et extrayez des informations de vos Permis de conduire.")
-    custom_button("Accéder à Permis de conduire Analyser", "https://drive-licence-analyzer.streamlit.app/")
-elif page == "Factures Analyser":
-    st.header("Factures Analyser")
-    st.write("Analysez et extrayez des informations de vos Factures.")
-    custom_button("Accéder à Factures Analyser", "https://invoice-extraction.streamlit.app/")
+elif page == "Resume Analyzer":
+    st.header("Resume Analyzer")
+    st.write("Analyze and extract information from your resumes.")
+    custom_button("Access Resume Analyzer", "https://cv-ai-deepseek.streamlit.app/")
+elif page == "ID Card Analyzer":
+    st.header("ID Card Analyzer")
+    st.write("Analyze and extract information from your ID cards.")
+    custom_button("Access ID Card Analyzer", "https://cni-analyser.streamlit.app/")
+elif page == "Driver's License Analyzer":
+    st.header("Driver's License Analyzer")
+    st.write("Analyze and extract information from your driver's licenses.")
+    custom_button("Access Driver's License Analyzer", "https://drive-licence-analyzer.streamlit.app/")
+elif page == "Invoice Analyzer":
+    st.header("Invoice Analyzer")
+    st.write("Analyze and extract information from your invoices.")
+    custom_button("Access Invoice Analyzer", "https://invoice-extraction.streamlit.app/")
 
 # Pied de page
 st.sidebar.markdown("---")
-st.sidebar.write("© 2025 Kaanari. Tous droits réservés.")
+st.sidebar.write("© 2025 Kaanari. All rights reserved.")
